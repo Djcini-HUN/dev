@@ -14,7 +14,7 @@ html,body{
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212529;
+    color: black;
     background:none;
     width: 100vw;
 }
@@ -26,7 +26,7 @@ header {
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #6c757d;
+    background-color: #ffffff;
     display: none;
 }
 
@@ -50,7 +50,7 @@ button {
     padding-top: 8rem;
     padding-inline: 20rem;
     height: fit-content;
-    background-color: #ced4da;
+    background-color: #ffffff;
     padding-bottom: 3vw;
 }
 
@@ -87,65 +87,66 @@ button {
     flex-direction: row;
     justify-content: left;
     height: fit-content;
+    gap:clamp(0.1rem,1.2rem,3rem);
 }
 
 .sec-main-div1-buttons-div button {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    /* gap: 0.4rem; */
     padding-inline: clamp(0.1rem, 1.2rem, 2rem);
     padding-block: clamp(0.1rem, 0.4rem, 0.4rem);
     font-size: clamp(1rem, 1vw, 1vw);
-    margin-right: 1.5rem;
+    width: clamp(9rem,13vw,14vw);
 }
 
 .upload-icon-light {
-    width: clamp(2rem, 3vw, 3rem);
-    height: clamp(2rem, 3vw, 3rem);
+    width: clamp(1.3rem, 1.4vw, 2rem);
+    height: clamp(1.3rem, 1.4vw, 2rem);
 }
 
-.youtube-icon-light {
-    width: clamp(2rem, 3vw, 3rem);
-    height: clamp(2rem, 3vw, 3rem);
+.youtube-icon-dark {
+    width: clamp(1.3rem, 2vw, 3rem);
+    height: clamp(1.3rem, 2vw, 3rem);
 }
 
 .button-upload,
 .darker-button {
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: #212529;
+    background-color: #359756;
     border-radius: 0.8rem;
     border-style: none;
 }
 
-.button-upload:hover {
+.button-upload:hover,.button-upload:focus {
     font-family: 'Roboto', sans-serif;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     border-radius: 0.8rem;
     border-style: none;
 }
 
-.button-upload:hover {
-    filter: invert(100%);
-    background-color: black;
-    color: white;
+.button-watch {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    color: black;
+    border-radius: 0.8rem;
+    border-style: none;
 }
 
-
-.button-watch,
 .light-button {
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: #6c757d;
+    background-color: #359756;
     border-radius: 0.8rem;
     border-style: none;
 }
 
-.button-watch:hover {
+.button-watch:hover,.button-watch:focus {
     font-family: 'Roboto', sans-serif;
-    color: white;
-    background-color: #adb5bd;
+    background-color: #d9d9d9;
     border-radius: 0.8rem;
     border-style: none;
 }
@@ -166,14 +167,14 @@ button {
 /* ----SECTION---- 2 */
 
 .section-2 {
-    background-color: #212529;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: clamp(10rem, 10vw, 10vw);
     height: fit-content;
     padding-block: 3rem;
-    color: white;
+    color: #359756;
     gap: clamp(2.5rem, 2vw,2vw);
 }
 
@@ -183,34 +184,35 @@ button {
     justify-content: center;
     width: clamp(8rem, 40vw,40vw);
     gap: clamp(2.5rem, 2vw,2vw);
+    margin-bottom: 25%;
 }
 
 .section-2 h2 {
     font-size: clamp(3rem, 3vw, 3vw);
-    color: white;
+    color: #359756;
     padding: clamp(1.2rem, 1.5rem, 1.5rem);
 }
 
 .section-2 p {
     font-size: clamp(1rem, 1vw, 2vw);
-    color: white;
+    color: black;
     padding: clamp(1.6rem, 1.8rem, 1.8rem);
     /* padding-inline: clamp(4.4rem, 4.6rem, 4.6rem); */
 }
 
 /* BUTTON EFFECT */
 .light-button {
-    width: clamp(10rem, 20vw, 20vw);
+    width: clamp(5rem, 13vw, 20vw);
     padding: clamp(0.1rem, 1.2rem, 2rem);
     font-size: clamp(0.8rem, 1vw, 1vw);
     transition: letter-spacing 1s;
 }
 
-.light-button:hover {
+/* .light-button:hover {
     box-shadow: 0px 0px 8px 3px #adb5bd;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.15rem;
     transition: letter-spacing 1.5s;
-}
+} */
 
 .sec2-right-left,
 .sec2-right-right {
@@ -223,23 +225,24 @@ button {
 }
 
 .back-style {
-    background-color: #ced4da;
+    background-color: white;
     color: black;
     padding-inline: clamp(0.4rem, 0.6rem, 0.6rem);
+    border-radius: 0.3em;
 }
 
 .back-style:hover {
     border-radius: 0.3em;
-    box-shadow: 0px 0px 8px 1px white;
+    box-shadow: 0px 0px 7px 1px #e5e5e5;
 }
 
 .back-style p {
-    color: #6c757d;
+    color: #555c66;
     font-family: Arial, sans-serif;
 }
 
 .back-style img {
-    background-color: #adb5bd;
+    background-color: #d8f6e2;
     border-radius: 50%;
     width: clamp(2rem, 3vw, 3vw);
     padding: clamp(1.4rem, 1.8rem, 1.8rem);
@@ -250,7 +253,7 @@ button {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: white;
-    background-color: #6c757d;
+    background-color: #359756;
     border-radius: 0.8rem;
     border-style: none;
     width: clamp(2.5rem, 5vw, 5vw);
@@ -261,17 +264,19 @@ button {
 
 .sec2-right-titles {
     font-size: clamp(2rem, 1.9vw, 1.9vw);
+    color:#359756;
 }
 
 .more_ {
     font-size: clamp(1.5rem, 1.6vw, 1.6vw);
-    border-bottom: 3px solid #212529;
+    border-bottom: 3px solid #359756;
     margin-bottom: 4rem;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .more_:hover {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
 }
 
 
@@ -281,8 +286,16 @@ button {
 
 
 .section-3 {
+    width: 100%;
     height: 800px;
     background-color: #adb5bd;
+}
+.sec3-div{
+    background-color: white;
+    width: 30vw;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    padding-block: 5rem;
 }
 
 
@@ -299,6 +312,7 @@ button {
     .sec2-left-div {
         padding-top: 1rem;
         width: 98vw;
+        margin-bottom: 5%;
     }
     
     .free {
@@ -317,7 +331,7 @@ button {
     }
 
     .back-style {
-        width: clamp(80vw, 20vw, 20vw);
+        width: clamp(16rem, 50vw, 50vw);
     }
 
     .section-2 p {
@@ -328,7 +342,7 @@ button {
         margin-bottom: 4rem;
     }
     .sec-main-div2 img{
-        margin-left: 0;
+        margin-left: 5rem;
     }
 }
 
@@ -338,7 +352,7 @@ button {
         justify-content: center;
         align-items: center;
         /* width: 100vw; */
-        padding-top: 5rem;
+        padding-top: 2rem;
         margin: auto;
         padding-inline: 1rem;
 
@@ -348,6 +362,9 @@ button {
     .sec-main-div1 {
         width: 90vw;
         align-items: center;
+    }
+    .sec-main-div2 img{
+        margin-left: 0rem;
     }
 
     .sec-main-div2 {
@@ -382,6 +399,7 @@ button {
 
     .sec-main-div1-buttons-div {
         order: 5;
+        padding-inline: 1rem;
     }
     .sec-main-div1-buttons-div{
         order: 6;
