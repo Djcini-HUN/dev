@@ -142,6 +142,7 @@ button {
     background-color: #359756;
     border-radius: 0.8rem;
     border-style: none;
+    margin-left: clamp(1.6rem, 1.8rem, 1.8rem);
 }
 
 .button-watch:hover,.button-watch:focus {
@@ -173,7 +174,7 @@ button {
     align-items: center;
     padding-inline: clamp(10rem, 10vw, 10vw);
     height: fit-content;
-    padding-block: 3rem;
+    padding-block: 2rem;
     color: #359756;
     gap: clamp(2.5rem, 2vw,2vw);
 }
@@ -188,9 +189,9 @@ button {
 }
 
 .section-2 h2 {
-    font-size: clamp(3rem, 3vw, 3vw);
+    font-size: clamp(2.3rem, 3vw, 3vw);
     color: #359756;
-    padding: clamp(1.2rem, 1.5rem, 1.5rem);
+    padding: clamp(0.2rem, 0.5rem, 1.5rem);
 }
 
 .section-2 p {
@@ -202,7 +203,7 @@ button {
 
 /* BUTTON EFFECT */
 .light-button {
-    width: clamp(5rem, 13vw, 20vw);
+    width: clamp(10rem, 13vw, 20vw);
     padding: clamp(0.1rem, 1.2rem, 2rem);
     font-size: clamp(0.8rem, 1vw, 1vw);
     transition: letter-spacing 1s;
@@ -335,7 +336,7 @@ button {
     }
 
     .section-2 p {
-        padding: clamp(1.6rem, 0.8rem, 1.8rem);
+        padding: clamp(0.5rem, 0.8rem, 1.8rem);
     }
 
     .more_ {
@@ -343,6 +344,9 @@ button {
     }
     .sec-main-div2 img{
         margin-left: 5rem;
+    }
+    .light-button{
+        margin-left: 0rem;
     }
 }
 
